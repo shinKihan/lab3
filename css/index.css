@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.navbar{
+  background-color: #b6801b;
+}
+
+section{
+  border: 1px solid #999999;
+  border-radius: 2%;
+  margin: 5px;
+}
+
+section > i, section > h2{
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social{
+  display:flex;
+}
+
+.social > li {
+  margin: auto;
+}
+.navbar {
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+@media (min-width: 991px){ 
+  .menu > li {
+    margin: 0.5em;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger{
+    display: none;
+  }
+  
+  header{
+    display: flex;
+    width: 100%;
+  }
+  header > h1{
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .logo{
+    width: 30%;
+    text-align: center;
+    padding: 1%;
+  }
+  main{
+    display: flex;
+  }
+  main > section {
+    width: 30%;
+    margin:1.5%;
+  }
+  
+}
+
+/* tablet */
+@media (min-width:600px) and (max-width: 990px){ 
+  header{
+    display: flex;
+    width: 100%;
+  }
+  header > h1{
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .logo{
+    width: 30%;
+    text-align: center;
+    padding: 1%;
+  }
+  
+  .icon{
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+  }
+  .navbar ul{
+    display: none;
+  }
+}
+/*cellphone*/
+@media (max-width:600px){
+  .navbar ul{
+    display: none;
+  }
+  .icon{
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.logo > img {
+  width: 1em;
+}
